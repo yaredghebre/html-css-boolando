@@ -30,6 +30,10 @@ a{
     margin: 0 auto;
 }
 
+img {
+    max-width: 100%;
+}
+
 /* HEADER */
 header{
     background-color: #ff6900;
@@ -81,16 +85,10 @@ header{
 }
 
 /* MAIN */
-main{
-    height: 1100px;
-}
-
 .main-container{
     padding: 50px 0;
     /* debug */
-    background-color: lightpink;
-    /* display: flex; */
-    height: 100%;
+    height: 1800px;
 }
 
 /* Grid */
@@ -100,11 +98,79 @@ main{
     gap: 20px;
 }
 
-.main-col{
-    height: 500px;
-    /* display: flex; */
+.main-card{
+    position: relative;
+    border: solid 1px;
+    height: 700px;
     width: calc(100% / 3 - (40px / 3));
-    background-color: red;
 }
 
+/* Cards */
 
+.card-details{
+    line-height: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.brand{
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+.product{
+    font-weight: 500;
+}
+
+.price{
+    color: red;
+    margin-right: 10px;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.prev-price{
+    font-size: .8rem;
+    font-weight: 300;
+    text-decoration: line-through;
+}
+
+.banner{
+    font-size: .8rem;
+    padding: 5px 10px;
+    color: white;
+}
+
+.discount{
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: 90px;
+}
+
+.sust{
+    background-color: green;
+    position: absolute;
+    left: 55px;
+    bottom: 90px;
+}
+
+.heart{
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    font-size: 3rem;
+    padding: 5px 5px;
+}
+
+#sust{
+    background-color: green;
+    position: absolute;
+    left: 0;
+    bottom: 90px;
+    font-size: .8rem;
+    padding: 5px 10px;
+    color: white;
+}
