@@ -72,11 +72,39 @@ header{
     height: 100%;
 }
 
-.actions{
+.top-actions{
     display: flex;
     height: 100%;
     align-items: center;
     justify-content: flex-end;    
     gap: 10px;
 }
+
+/* MAIN */
+main{
+    height: 1100px;
+}
+
+.main-container{
+    padding: 50px 0;
+    /* debug */
+    background-color: lightpink;
+    /* display: flex; */
+    height: 100%;
+}
+
+/* Grid */
+.main-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.main-col{
+    height: 500px;
+    /* display: flex; */
+    width: calc(100% / 3 - (40px / 3));
+    background-color: red;
+}
+
 
