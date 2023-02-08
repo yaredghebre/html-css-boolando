@@ -37,10 +37,14 @@ img {
 /* HEADER */
 header{
     background-color: #ff6900;
+    width: 100%;
     font-weight: 600;
     color: white;
-    /* debug */
-    height: 100px;
+    height: 80px;
+    box-shadow: 0 2px 5px grey;
+    position: fixed;
+    z-index: 999;
+
 }
 
 .header-container{
@@ -61,13 +65,17 @@ header{
     gap: 10px;
 }
 
+.genders:hover{
+    text-decoration: underline;
+}
+
 /* header-center */
 .header-logo{
     width: calc(100% / 3);
     height: 100%;
     display: flex;
     justify-content: space-around;
-    padding: 35px;
+    padding: 25px;
 }
 
 /* header-right */
@@ -86,9 +94,7 @@ header{
 
 /* MAIN */
 .main-container{
-    padding: 50px 0;
-    /* debug */
-    height: 1800px;
+    padding: 150px 0;
 }
 
 /* Grid */
