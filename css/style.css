@@ -100,13 +100,12 @@ header{
 
 .main-card{
     position: relative;
-    border: solid 1px;
+    border: solid 1px transparent;
     height: 700px;
     width: calc(100% / 3 - (40px / 3));
 }
 
 /* Cards */
-
 .card-details{
     line-height: 15px;
     position: absolute;
@@ -161,8 +160,8 @@ header{
     position: absolute;
     right: 0;
     top: 10px;
-    font-size: 3rem;
-    padding: 5px 5px;
+    font-size: 2rem;
+    padding: 5px 15px;
 }
 
 #sust{
@@ -173,4 +172,17 @@ header{
     font-size: .8rem;
     padding: 5px 10px;
     color: white;
+}
+
+/* cards hovering */
+.img-b{
+    display: none;
+}
+
+.card-img:hover .img-b{
+    display: block;
+}
+
+.card-img:hover .img-a{
+    display: none;
 }
